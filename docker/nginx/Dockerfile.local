@@ -1,0 +1,14 @@
+FROM nginx:1.25.4
+
+# Install packages
+RUN apt update \
+    && apt install default-mysql-client -y \
+    && apt clean
+
+# Add files
+COPY ./docker/nginx/config/default.conf /etc/nginx/conf.d/
+COPY ./docker/nginx/scripts/entrypoint.sh /tmp/entrypoint.sh
+
+RUN echo -n "$(cat /docker-entrypoint.sh /tmp/entrypoint.sh  \
+    |   grep -v "exec \"\$@\"")\n\nexec \"\$@\"\n" \
+    >   "/docker-entrypoint.sh"

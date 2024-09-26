@@ -1,0 +1,9 @@
+{
+    "root": [
+        "./src/queries/article/article.ts",
+        "./src/queries/category/articles.ts",
+        "./src/queries/category/categories.ts",
+        "./src/utils/apolloclient.ts"
+    ],
+    "version": "5.6.2"
+}

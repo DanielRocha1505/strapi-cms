@@ -1,0 +1,49 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "deploy": "strapi deploy"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4"
+  },
+  "dependencies": {
+    "@retikolo/drag-drop-content-types": "^1.7.1",
+    "@strapi/plugin-cloud": "4.25.10",
+    "@strapi/plugin-color-picker": "^4.25.11",
+    "@strapi/plugin-graphql": "^4.25.10",
+    "@strapi/plugin-i18n": "4.25.10",
+    "@strapi/plugin-seo": "^1.9.9",
+    "@strapi/plugin-users-permissions": "4.25.10",
+    "@strapi/strapi": "4.25.10",
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.27",
+    "mysql": "2.18.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-heroicons-field": "^0.0.5",
+    "strapi-plugin-import-export-entries": "^1.23.1",
+    "strapi-plugin-menus": "^1.6.1",
+    "strapi-plugin-multi-select": "^1.2.3",
+    "strapi-plugin-react-icons": "^0.3.1",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "f5c3141e-ca50-46a5-ada2-69a30d02e490"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
